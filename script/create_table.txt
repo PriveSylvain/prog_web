@@ -1,0 +1,26 @@
+CREATE TABLE `Project` (
+`GOLDSTAMP` varchar(255)  CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+`LEGACY_GOLDSTAMP` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci ,
+`PROJECT_NAME` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci ,
+`PROJECT_TYPE` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci ,
+`PROJECT_STATUS` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci ,
+`SEQUENCING_STATUS` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci ,
+`SEQUENCING_CENTERS` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci ,
+`FUNDING` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci ,
+`CONTACT_NAME` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci,
+`NCBI_BIOPROJECT ID` int(9),
+`NCBI_PROJECT_NAME` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci ,
+`NCBI_TAXON_ID` int(9)
+)
+
+CREATE TABLE `Taxon` (
+`NCBI_TAXON_ID` int(9) NOT NULL,
+`DOMAIN` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci ,
+`KINGDOM` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci ,
+`PHYLUM` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci ,
+`CLASS` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci ,
+`ORDER` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci,
+`FAMILY` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci,
+`GENUS` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci,
+`SPECIES` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci
+)

@@ -1,0 +1,306 @@
+
+html
+{
+margin: 0;
+padding-right: 5%;
+max-width: 1200px;
+height:100%;
+margin: 0 auto;
+	
+background: url("background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/*********************BODY*************************/
+
+body
+{	
+}
+
+
+/********************HEADER***********************/
+
+#barre
+{
+	display: flex;
+	background:url("background.png") repeat;
+	opacity:1;
+	padding:9px 5px;
+	margin-top:10px;
+	height:130px;
+	width:1260px;
+	border-radius:10px;
+	flex-wrap:no-wrap;
+}
+.haut
+{
+	font-size:23px;
+	padding:49px 60px;
+	font-weight:bold;
+}
+.adv		/*Recherche avancee*/
+{
+	padding:54px 0px;
+}
+
+/****Barre de recherche****/
+.rech
+{
+	padding:49px 40px;
+	font-weight:bold;
+	font-size:22px;
+}
+
+#search
+{
+	display:flex;
+	justify-content:space-around;
+}
+.area
+{
+	margin-left:5px;
+	border-radius:8px;
+	margin-bottom:1px;
+}
+.button
+{
+	margin-left:5px;
+	width:30px;
+	height:30px;
+	background: white url("search1.png") no-repeat center;
+	background-size:18px 18px;
+	border-radius:25px;
+}
+
+
+/*************************MENU*************************/
+
+nav
+{
+	float:left;
+}
+#menu
+{
+	margin-top:15px;
+	margin-bottom:15px;
+	display: flex;
+	flex-direction:column;
+	background:url("background.png") repeat-y;
+	opacity:1;
+	width:200px;
+	border-radius:10px;
+}
+.gauche
+{
+	padding: 15px 0px 15px 45px;
+}
+.gauche a
+{
+	color:white;
+}
+
+
+/************************ACCUEIL/RESULTAT************************/
+
+#centre		/*Page d'accueil*/
+{
+	margin: 15px 215px;
+	background-color: white;
+	/*background-image:url("");*/
+	height:800px;
+	width:1050px;
+	opacity:0.8;
+	border-radius:10px;
+	position:absolute;
+	z-index:1;
+}
+
+#center		/*Page de resultats*/
+{
+	margin: 15px 215px;
+	background-color: white;
+	width:1035px;
+	opacity:0.8;
+	border-radius:10px;
+	position:absolute;
+	z-index:2;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+#center .tab	/*Tableau de resultats*/
+{
+	border-collapse:collapse;
+	width:1025px;
+}
+tr th
+{
+	font-size:19px;
+	border:1px black solid;
+}
+tr td
+{
+	font-size:18px;
+	border:1px black solid;
+	text-align:center;
+}
+
+#center .tab1
+{
+	border:none;
+}
+
+.tab1 td
+{
+	border:none;
+	font-size:17px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/*********************FICHE*********************/
+
+#fiche		/*Fiche de resultat*/
+{
+	margin: 15px 215px;
+	background-color: white;
+	width:1035px;
+	opacity:0.8;
+	border-radius:10px;
+	position:absolute;
+	z-index:2;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+.proj	/*Fiche: Tableau projet*/
+{
+	border-collapse:collapse;
+	width:460px;
+	float:left;
+}
+.proj TD
+{
+	text-align:center;
+}
+.taxon	/*Fiche: Tableau taxon*/
+{
+	float: right;
+	border-collapse:collapse;
+	height:270px;
+	width:250px;
+	margin-right:150px;
+}
+.taxon TD
+{
+	font-size: 17px;
+}
+/*********************contact*********************/
+div.img {
+    margin: 100px;
+    padding-left: 150px;
+    position:absolute;
+	z-index:2;
+}
+
+
+
+div.img1 span {
+background-color:#C0C0C0;
+padding:3px;
+box-shadow:2px 2px 2px gray,
+-1px -1px 2px white;
+Font-Weight: Bold; 
+}
+
+div.img2 span {
+background-color:#C0C0C0;
+padding:3px;
+box-shadow:2px 2px 2px gray,
+-1px -1px 2px white;
+Font-Weight: Bold;
+}
+
+div.img3 span {
+background-color:#C0C0C0;
+padding:3px;
+box-shadow:2px 2px 2px gray,
+-1px -1px 2px white;
+Font-Weight: Bold;
+}
+
+div.img1 img {
+    width: 150px;
+    height:150px;
+    border-radius: 10px;
+    border: 3px black solid;
+}
+
+div.img2{
+    padding-top: 20px;
+}
+
+div.img3{
+    padding-top: 20px;
+}
+
+div.img2 img {
+    width: 150px;
+    height:150px;
+    border-radius: 10px;
+    border: 3px black solid;
+}
+
+div.img3 img {
+    width: 150px;
+    height:150px;
+    border-radius: 10px;
+    border: 3px black solid;
+}
+
+div.img1 img:hover {
+    width: 300px;
+    height:300px;
+}
+
+div.img2 img:hover {
+    width: 300px;
+    height:300px;
+}
+div.img3 img:hover {
+    width: 300px;
+    height:300px;
+}
+
+
+/*********************About*********************/
+div.logos {
+    float:right;
+    padding-right: 5%;
+    padding-top: 10%
+}
+
+div.img4 img {
+    width: 350px;
+    height:250px;
+    border-radius: 10px;
+    border: 3px black solid;
+}
+
+
+div.img5 img {
+    width: 450px;
+    height:150px;
+    border-radius: 10px;
+    border: 3px black solid;
+}
+
+
+div.about {
+	width: 40%;
+	padding-left: 6%;
+	float: left;
+	padding-top: 7%; 
+}
